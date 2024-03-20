@@ -18,7 +18,7 @@ This web application allows users to maintain a list of image URLs and play a sl
 ### Backend Setup
 - Clone this repository: git clone https://github.com/benhuri/novi-backend.git
 - Import the backend project into your preferred IDE.
-- Run the Spring Boot application.
+- Run the Spring Boot application with this CLI command 'mvn spring-boot:run'.
 
 OR
 
