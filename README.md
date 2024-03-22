@@ -25,6 +25,12 @@ OR
 - Run ./mvnw clean package on command line
 - java -jar target/demo-0.1.0.jar
 
+### Error handling
+- The controller methods (getAllImages(), addImage(), deleteImage()) do not explicitly handle exceptions or errors. They delegate exception handling to the Spring MVC framework.
+- When an exception occurs during the execution of these methods, Spring MVC will handle it based on the configured exception handling mechanism. By default, Spring MVC provides a basic error handling mechanism   
+  that returns an appropriate HTTP status code and an error message in the response body.
+- For example, if an exception occurs while executing getAllImages(), Spring MVC will return an HTTP status code 500 (Internal Server Error) with a generic error message in the response body.
+
 ### Usage
 You can test the backend app by using Postman (or any other API app) with the following options:
 Base local URL http://localhost:8080/
